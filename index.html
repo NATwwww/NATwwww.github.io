@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf5f3">
+  <meta name="description" content="王方仪的个人展示网站：统计学背景，求职产品经理与 AI 产品。查看教育背景、实习经历、项目与专业技能，下载个人简历。">
+  <title>王方仪 · 产品经理 / AI 产品</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./content.js" defer></script>
+  <script src="./portfolio.js" defer></script>
+  <script src="./pig.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a class="wordmark" href="./index.html" aria-label="个人主页"><span class="brand-dot"></span>A LITTLE CURIOSITY<span class="wordmark-divider"> / </span><span class="portfolio-label">PORTFOLIO</span></a>
+      <span class="edition">用好奇心，创造一点不同 <span>✳</span></span>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="profile-name">
+        <div class="intro">
+          <p class="eyebrow"><span></span> HELLO, I'M</p>
+          <h1 id="profile-name">王方仪</h1>
+          <p class="english-name" id="english-name">FANGYI WANG</p>
+          <h2 class="role" id="profile-role">求职目标：产品经理 / AI 产品</h2>
+          <p class="introduction" id="introduction"></p>
+          <div class="profile-tags" id="profile-tags" aria-label="关注方向"></div>
+          <a class="resume-link" id="resume-link" href="./王方仪-统计学-产品经理.pdf" download aria-describedby="resume-note"><span>下载我的简历 <small>RESUME</small></span><span aria-hidden="true">↗</span></a>
+          <p class="resume-note" id="resume-note" role="status">PDF 简历 · 点击下载</p>
+        </div>
+        <div class="mascot" aria-label="猪猪互动区">
+          <p class="mascot-prompt"><span class="tiny-cross">+</span> MOVE YOUR CURSOR · SAY HELLO</p>
+          <div class="orbit" aria-hidden="true"></div>
+          <div class="pig-window">
+            <video class="pig-video" src="./似乎有些猪动.mp4" muted playsinline preload="auto" aria-hidden="true"></video>
+            <canvas class="pig-canvas" width="900" height="900" role="img" aria-label="眼睛随鼠标上下左右转动的粉色针织猪猪"></canvas>
+            <p class="load-error" role="status" hidden>猪猪暂时没有加载成功，请刷新再试。</p>
+          </div>
+          <span class="sparkle" aria-hidden="true">✳</span>
+          <span class="little-sparkle" aria-hidden="true">✦</span>
+          <div class="hello-note" aria-hidden="true">hi, there!<span>↘</span></div>
+          <div class="mascot-caption"><span class="status-dot"></span> 你的好奇心搭子 <span class="caption-divider">/</span> LITTLE PIG</div>
+        </div>
+      </section>
+      <section class="explore" aria-label="个人经历导航">
+        <div class="section-label"><span>GET TO KNOW ME</span><span>四个切面，慢慢认识 <span aria-hidden="true">↓</span></span></div>
+        <div class="cards" id="section-cards"></div>
+      </section>
+    </main>
+    <footer class="page-footer"><span>MADE OF CURIOSITY & A LITTLE PINK.</span><span>王方仪 · 个人作品集 <span class="footer-flower">✳</span></span></footer>
+  </div>
+  <dialog id="detail-dialog" aria-labelledby="detail-title" aria-describedby="detail-subtitle">
+    <div class="dialog-shell">
+      <button class="close-dialog" id="close-dialog" type="button" aria-label="关闭详情">×</button>
+      <div class="dialog-scroll">
+        <header class="detail-header">
+          <p class="eyebrow" id="detail-eyebrow"></p>
+          <h2 id="detail-title"></h2>
+          <p id="detail-subtitle"></p>
+        </header>
+        <div id="detail-body"></div>
+      </div>
+      <footer class="dialog-footer"><span>FANGYI WANG / PORTFOLIO</span><span>STAY CURIOUS. <span>✳</span></span></footer>
+    </div>
+  </dialog>
+</body>
+</html>
